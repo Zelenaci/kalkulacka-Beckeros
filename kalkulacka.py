@@ -20,13 +20,13 @@ class Application(tk.Tk):
         self.listbox.grid(row = 2, column = 1, pady = 30, columnspan = 4)
         self.frame = Frame(self)
         self.frame.grid(row = 2, column = 5)
-        self.btn_up = tk.Button(self.frame, text = "UP", command = self.up, width = 15, border = 5, background = "#555555")
+        self.btn_up = tk.Button(self.frame, text = "UP", command = self.up, width = 15, border = 5, background = "#553555")
         self.btn_up.pack()
-        self.btn_down = tk.Button(self.frame, text = "DOWN", command = self.down, width = 15, border = 5, background = "#555555")
+        self.btn_down = tk.Button(self.frame, text = "DOWN", command = self.down, width = 15, border = 5, background = "#355555")
         self.btn_down.pack()
-        self.btn_del = tk.Button(self, text = "DELETE", command = self.del_storage, width = 20, border = 10, background = "#FFFF00")
+        self.btn_del = tk.Button(self, text = "DELETE", command = self.del_storage, width = 20, border = 10, background = "#FAFF00")
         self.btn_del.grid(row = 4, column = 3)
-        self.btn_quit = tk.Button(self, text = "CLOSE", command = self.quit, width = 20, border = 10, background = "#FF0000")
+        self.btn_quit = tk.Button(self, text = "CLOSE", command = self.quit, width = 20, border = 10, background = "#FA0000")
         self.btn_quit.grid(row = 4, column = 4)
         self.storage = []
         self.double_operand = {}
